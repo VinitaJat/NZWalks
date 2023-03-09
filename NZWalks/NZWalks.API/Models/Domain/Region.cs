@@ -1,0 +1,20 @@
+﻿using System.Runtime;
+
+namespace NZWalks.API.Models.Domain
+{
+    public class Region
+    {
+        public Guid Id { get; set; }  
+        public String Code { get; set; }
+        public string Name { get; set; }
+        public double Area { get; set; }
+        public double Lat { get; set; }
+        public double Long { get; set; }
+        public double Population { get; set; }
+
+        // Navigation Property
+    public IEnumerable<Walkcs> Walks { get; set; }
+
+
+    }
+}
